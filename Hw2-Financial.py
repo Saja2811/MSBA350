@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load data
-data = pd.read_csv('C:/Users/User/Desktop/Spring 2025/MSBA350-Financial Analytics/MSBA350-CH2/Hw 2/cleaned-data.csv')
+data = pd.read_csv('cleaned-data.csv')
 
 # Streamlit app
 st.title("Data pre-processing and return analysis- Assignment 2")
@@ -209,7 +209,7 @@ st.title("📈 Inflation-Adjusted Stock Returns Analysis")
 
 # Load CPI Data
 st.subheader("Loading Consumer Price Index (CPI) Data")
-cpi = pd.read_csv('C:/Users/User/Desktop/Spring 2025/MSBA350-Financial Analytics/MSBA350-CH2/Hw 2/cpi2.csv')
+cpi = pd.read_csv('cpi2.csv')
 
 # Convert TIME_PERIOD to datetime and sort data
 cpi['TIME_PERIOD'] = pd.to_datetime(cpi['TIME_PERIOD'])
@@ -341,9 +341,9 @@ These findings reinforce the idea that investors in developed markets should mon
 """)
 
 
-btc = pd.read_csv('C:/Users/User/Desktop/Spring 2025/MSBA350-Financial Analytics/MSBA350-CH2/Hw 2/BTCUSDT_trades.csv')
-xrp = pd.read_csv('C:/Users/User/Desktop/Spring 2025/MSBA350-Financial Analytics/MSBA350-CH2/Hw 2/XRPUSDT_trades.csv')
-doge = pd.read_csv('C:/Users/User/Desktop/Spring 2025/MSBA350-Financial Analytics/MSBA350-CH2/Hw 2/DOGEUSDT_trades.csv')
+btc = pd.read_csv('BTCUSDT_trades.csv')
+xrp = pd.read_csv('XRPUSDT_trades.csv')
+doge = pd.read_csv('DOGEUSDT_trades.csv')
 
 dfs = [btc, xrp, doge]
 dfs_names = ['BTCUSDT', 'XRPUSDT', 'DOGEUSDT']
