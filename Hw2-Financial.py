@@ -427,3 +427,10 @@ st.subheader(f"Time Bars for {selected_crypto}")
 st.dataframe(bars)
 
 
+st.write("BTCUSDT: Shows a dominant bearish candle, suggesting a major price movement in a single interval with little fluctuation afterward.")
+st.write("XRPUSDT: Displays a steady downtrend with significant price drops and intraday volatility.")
+st.write("DOGEUSDT: Has the most fluctuations, showing alternating bullish and bearish movements, suggesting higher volatility.")
+
+st.write("Time bars offer a structured way to analyze price trends over fixed intervals. However, they may not always capture rapid market movements efficiently, making them less responsive than tick, volume, or dollar bars in high-volatility scenarios.")
+
+
